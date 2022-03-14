@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+
+            }
+            body{
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .topnav{
+                overflow: hidden;
+                background-color: brown;
+            }
+            .topnav ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            .topnav > ul > li{
+                float: left;
+            }
+            .topnav a{
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 18px; 
+                display: inline-block;  
+            }
+            .active, .topnav a:hover{
+                background-color: black;
+                color: red;
+            }
+            .topnav_right{
+                float: right;
+            }
+            .topnav_right form{
+                margin: 0;
+                padding: 0;
+            }
+            
+            
+            .dropdown{/*langkah pertama membuat dropdown*/
+                display: inline-block;
+            }
+            .dropdown:hover .isi-dropdown {/*untuk memunculkan dropdown*/
+		        display: block;
+	        }
+	        .isi-dropdown {/*menentukan isi dropdown*/
+		        position: absolute;
+		        display: none;
+		        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		        z-index: 1;
+		        background-color: #f9f9f9;
+	        }
+	        .isi-dropdown a {/*warna tulisan*/
+		        color: #0ee618;
+	        }
+	        .isi-dropdown a:hover {/*memrubah warna saat di pencet*/
+		        color: #232323;
+		        background: #f1a8a8;
+	        }
+        </style>
+
+    </head>
+    <body>
+        
+        <div class="topnav">
+            <ul>
+                <li><a class="active" href="">home</a></li>
+
+                <li class="dropdown"><a href="">list-1</a>
+                    <ul class="isi-dropdown">
+                        <li><a href="">sub-1</a></li>
+                        <li><a href="">sub-1</a></li>
+                        <li><a href="">sub-1</a></li>
+                        <li><a href="">sub-1</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown"><a href="">list-2</a>
+                    <ul class="isi-dropdown">
+                        <li><a href="">sub-1</a></li>
+                        <li><a href="">sub-1</a></li>
+                        <li><a href="">sub-1</a></li>
+                        <li><a href="">sub-1</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="topnav_right">
+                <a><form><input type="text" placeholder="Search..."></form></a>
+                <a href="">chandra</a>
+            </div>    
+        </div>
+    
+    </body>
+</html>

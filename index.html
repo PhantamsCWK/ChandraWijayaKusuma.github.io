@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Login</title>
+        <style>
+            *{
+                outline: 0;
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .login{
+                position: absolute;
+                height: 340px;
+                width: 300px;
+                background-color: aqua;
+                border-radius: 10px;
+                box-shadow: 1px 2px 8px black;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                padding: 30px 20px;
+            }
+            .login h1{
+                text-align: center;
+                font-weight: 300;
+                text-transform: uppercase;
+                border-bottom: 2px solid black;
+                margin-bottom: 30px;
+            }
+            .login label{
+                color: blue;
+                text-transform: capitalize;
+            }
+            .login input{
+                width: 100%;
+                padding: 8px 10px;
+                margin-bottom: 20px;
+                border: none;
+                background-color: transparent;
+                border-bottom: 2px solid blue;
+            }
+            .login button{
+                width: 100%;
+                padding: 5px 0px;
+                border: none;
+                font-size: 20px;
+                background-color: red;
+                color: black;
+            }
+            .login button a{
+                text-decoration: none;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="login">
+            <h1>Login</h1>
+
+            <form>
+                <label>email</label>
+                <input type="text">
+
+                <label>password</label><br>
+                <input type="password"><br>
+
+                <button>
+                    <a href="nav_list.html">Submit</a>
+                </button>
+                
+                <input type="checkbox" name="mengerti">dengan 
+            </form>
+        </div>
+    </body>
+</html>

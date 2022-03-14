@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .sidenav{
+                overflow: auto;
+                background-color: rgb(245, 148, 112);
+                width: 25%;
+                float: right;
+                position: fixed;
+                height: 100%;
+            }
+            .sidenav ul{
+                list-style-type: none;
+            }
+            
+            .sidenav li a{
+                display: block;
+                color: rgb(0, 0, 0);
+                padding: 8px 16px;
+                text-decoration: none;
+                font-size: 20px;
+            }
+            li a.active{
+                background-color: rgb(248, 141, 0);
+                color: rgb(255, 255, 255);
+            }
+            .sidenav li a:hover:not(.active){
+                background-color: grey;
+                color: white;
+            }
+            .konten{
+                margin-left: 25%;
+                padding: 2px;
+                height: 1000vh;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="sidenav">
+            <ul>
+                <li><a class="active" href="">pertama</a></li>
+                <li><a href="">kedua</a></li>
+                <li><a href="">ketiga</a></li>
+                <li><a href="">keempat</a></li>
+                <li><a href="">kelima</a></li>
+            </ul>
+        </div>
+        <div class="konten">
+            <h1>heading</h1>
+            <h2>sub heading</h2>
+            <p>dadnadkahdkahdkhakdkdadkahdkahkdhakdhkdhadhkahdkahdkahdkhakdhakhdkahdkahdkah</p>
+        </div>
+    </body>
+</html>
