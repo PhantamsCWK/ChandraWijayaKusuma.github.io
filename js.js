@@ -1,1 +1,1 @@
-dadada
+alert("bahaya")
